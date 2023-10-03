@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "rs_lisp"
+name = "crispy"
 version = "0.1.0"
