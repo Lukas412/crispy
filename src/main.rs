@@ -2,11 +2,19 @@ fn main() {
     let program = ();
 }
 
-enum Value<'a> {
+enum GenericValue<'a> {
+    Symbol(&'a str),
     Number(u8),
-    String(&'a str)
+    Text(&'a str),
+    List(List<Self>),
+    FunctionCall(FunctionCall<'a, Self>)
 }
 
-struct Data<T> {
+struct FunctionCall<'a, Arguments> {
+    name: &'a str,
+    arguments: List<Arguments>
+}
+
+struct List<T> {
     values: Vec<T>
 }
