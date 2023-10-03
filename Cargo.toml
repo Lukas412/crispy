@@ -2,5 +2,7 @@
 name = "crispy"
 version = "0.1.0"
 edition = "2021"
+description = "a lisp enterpreter"
+license = "MIT"
 
 [dependencies]
