@@ -1,3 +1,7 @@
 fn main() {
-    println!("Hello, world!");
+    let program = ();
+}
+
+struct Data<T> {
+
 }
