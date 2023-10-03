@@ -3,5 +3,5 @@ fn main() {
 }
 
 struct Data<T> {
-
+    values: Vec<T>
 }
