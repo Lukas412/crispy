@@ -9,7 +9,11 @@ fn parse_to_programm(programm: &mut Programm, input: &str) {}
 fn parse_and_evaluate(programm: &Programm, input: &str) -> GenericValue {}
 
 struct Programm {
-    functions: HashMap<Box<str>, fn(List<GenericValue>) -> GenericValue>,
+    generic_functions: HashMap<Box<str>, fn(List<GenericValue>) -> GenericValue>,
+}
+
+struct FunctionStore {
+    generic: HashMap<Box<str>, fn(List<GenericValue>)>,
 }
 
 enum GenericValue<'a> {
