@@ -2,7 +2,9 @@ fn main() {
     let program = ();
 }
 
-enum Value {
+enum Value<'a> {
+    Number(u8),
+    String(&'a str)
 }
 
 struct Data<T> {
